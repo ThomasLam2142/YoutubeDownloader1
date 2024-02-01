@@ -1,9 +1,5 @@
 # YOUTUBE TO MP3 FLASK WEBSITE
 
-Run with `docker run -p 8080:8080 gcr.io/as-a-service-dev/pdf`
-
-### URL parameters:
-
 Input the URL of the Youtube video you need to convert to mp3
 
 ## Running the server locally
