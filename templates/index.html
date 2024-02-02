@@ -3,11 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Youtube Downloader</title>
     <style>
-        body {
+        body, main {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
         }
         header {
             background-color: #333;
@@ -17,12 +22,15 @@
         }
         form {
             margin: 20px auto;
-            width: 80%;
+            width: 60%; /* Reduced the width */
+            padding: 20px; /* Added padding */
+
         }
         input[type="text"] {
-            width: 70%;
-            padding: 10px;
-            margin-right: 10px;
+            width: 100%;
+            padding: 10px; /* Added padding */
+            border-radius: 5px; /* Added border radius */
+            border: 1px solid #007BFF; /* Added border */
         }
         button {
             padding: 10px 20px;
@@ -30,21 +38,29 @@
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 5px; /* Added border radius */
+            margin-top: 10px; /* Added margin top */
         }
         button:hover {
             background-color: #0056b3;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 20px;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
+    </header>
+    <main>
         <h1>Youtube Downloader</h1>
         <form action="/download" method="post">
             <input type="text" name="url" placeholder="Enter URL">
-            <button type="submit">PRESS HERE</button>
+            <button type="submit">Convert</button>
         </form>
-    </header>
-    <main>
     </main>
 </body>
 
